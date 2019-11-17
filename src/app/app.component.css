@@ -6,10 +6,54 @@
   background: #f3f3f3;
 }
 
+.bg-gradient {
+  background: linear-gradient(270deg, #49a8d4, #2791c3, #27c3a9);
+  background-size: 600% 600%;
+
+  -webkit-animation: bg-gradient 30s ease infinite;
+  -moz-animation: bg-gradient 30s ease infinite;
+  animation: bg-gradient 30s ease infinite;
+}
+
+@-webkit-keyframes bg-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes bg-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes bg-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .content {
   background: #fff;
-  width: 400px;
+  max-width: 400px;
   border: 2pt solid #ddd;
+  margin: 0 1rem;
   padding: 0 1rem 1rem;
   border-radius: 4px;
   box-shadow: 0 0 5pt 0 rgba(0, 0, 0, 0.4);
@@ -36,6 +80,7 @@ div > button {
  * animation fade-in-top
  * ----------------------------------------
  */
+
 @-webkit-keyframes fade-in-top {
   0% {
     -webkit-transform: translateY(-50px);
