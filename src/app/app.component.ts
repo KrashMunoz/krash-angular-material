@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'angular landing page';
 
   clickMethod(event) {
-    console.log(event)
+    console.log("Click Event =>", event)
   }
 }
